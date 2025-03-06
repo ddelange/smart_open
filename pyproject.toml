@@ -55,6 +55,7 @@ test = [
 testpaths = ["smart_open"]
 
 [tool.setuptools.packages.find]
+include = ["smart_open"]
 exclude = ["smart_open.tests*"]
 
 [tool.setuptools_scm]
