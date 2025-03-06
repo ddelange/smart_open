@@ -56,7 +56,7 @@ jobs:
         run: pip install -e .[test]
 
       - name: Run unit tests
-        run: pytest smart_open -v -rfxECs --durations=20
+        run: pytest tests -v -rfxECs --durations=20
 
   doctest:
     needs: [linters,unit_tests]
